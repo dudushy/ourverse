@@ -1,0 +1,27 @@
+<header [attr.theme]="theme" [attr.mobileMode]="mobileMode">
+  <h1>
+    <a href="https://github.com/dudushy/ourverse" target="_blank">ourverse</a>
+  </h1>
+
+  <p>
+    Made with <span id="heart">&#10084;</span>
+    <br>
+    by
+    <br>
+    <a href="https://github.com/dudushy" target="_blank">dudushy</a>
+  </p>
+
+  <button *ngIf="theme == 'dark'" (click)="toggleTheme('light')">
+    <img alt="dark theme" src="assets/SVGs/sunny.svg">
+  </button>
+  <button *ngIf="theme == 'light'" (click)="toggleTheme('dark')">
+    <img alt="light theme" src="assets/SVGs/moon.svg">
+  </button>
+
+  <hr>
+</header>
+<!-- <router-outlet></router-outlet> -->
+
+<main [attr.theme]="theme" [attr.mobileMode]="mobileMode">
+  <h3>test</h3>
+</main>
