@@ -2,20 +2,30 @@
 
 header {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-block: 1%;
+  height: 5vh;
 
   button {
     // position: absolute;
     // top: 0;
     // right: 0;
-    height: 10%;
-    width: 10%;
+    // height: 10%;
+    // width: 10%;
+    border-radius: 50%;
+    max-width: 3%;
+    // max-height: 3%;
     padding: 0;
     margin: 0;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
 
     img {
-      width: 10%;
-      // height: 100%;
+      width: 100%;
+      height: 100%;
+      padding: 5%;
     }
   }
 
@@ -24,6 +34,16 @@ header {
   }
 }
 
-main {
+main[theme="light"] {
+  border-top: 2px solid $dark;
+  background-color: $galaxy-bg;
+  height: 91vh;
+  position: relative;
+}
 
+main[theme="dark"] {
+  border-top: 2px solid $light;
+  background-color: $galaxy-bg;
+  height: 91vh;
+  position: relative;
 }
